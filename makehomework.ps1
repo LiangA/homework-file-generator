@@ -8,7 +8,6 @@ $problems = -split $problems_input
 
 foreach ($problem in $problems) {
 $p = $problem -split "\."
-echo $p.getType()
 $name = '.\{0}_hw_{1}_{2}_{3}.py' -f $email, $series, $p[0], $p[1] 
 New-Item -Path '.' -Name $name -ItemType file -Force
 }
